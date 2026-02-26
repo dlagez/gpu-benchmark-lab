@@ -1,0 +1,60 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Benchmark outputs
+results/logs/*
+results/traces/*
+results/metrics.json
+!results/logs/.gitkeep
+!results/traces/.gitkeep
+
+# Profiler and CUDA/Nsight artifacts
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.nvvp
+*.cuprof
+*.ptx
+*.cubin
+
+# Jupyter
+.ipynb_checkpoints/
