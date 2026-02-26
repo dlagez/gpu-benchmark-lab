@@ -1,0 +1,29 @@
+# Core ML stack
+torch>=2.3,<2.7
+torchvision>=0.18,<0.22
+torchaudio>=2.3,<2.7
+
+# Data/config
+numpy>=1.26,<3
+PyYAML>=6.0,<7
+packaging>=24.0,<26
+psutil>=5.9,<7
+tqdm>=4.66,<5
+
+# Profiling and visualization
+tensorboard>=2.14,<3
+matplotlib>=3.8,<4
+pandas>=2.2,<3
+
+# Developer UX / testing
+rich>=13.7,<15
+pytest>=8.0,<9
+pytest-cov>=5.0,<6
+
+# Build helpers for CUDA/C++ extensions
+ninja>=1.11,<2
+setuptools>=68,<76
+wheel>=0.42,<1
+
+# Triton is primarily Linux x86_64
+triton>=2.3,<4; platform_system == "Linux" and platform_machine == "x86_64"
